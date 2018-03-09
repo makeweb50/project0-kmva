@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="script.js"></script>-->
 </head>
 <body>
     <header class="progh">
@@ -24,29 +26,19 @@
     <main class="progpage withnav">
          <div class="container-fluid">
             <h1>innerHTML = cool_blog</h1>
-              <div class="code"> 
-              <div class="row">
-                
-                <div class="col-sm-1">
-                  <img src="img/earth0.gif" alt="Network"> 
-                </div>
-                <div class="col-sm-1">
-                  <img src="img/net0.gif" alt="Network"> 
-                </div>
-              </div>
+             <div id="code" class="code">
+              <br>&ltdiv class="code"&gt
+              <br> &ltimg src="img/earth0.gif" alt="Earth"&gt
               
-              <div class="row">
+              <br>  &ltimg src="img/net0.gif" alt="Network"&gt 
               
-              <div class="col-sm-1">
-                <img src="img/net2.gif" alt="Network"> 
-              </div>
-              <div class="col-sm-1">
-                <img src="img/net1.gif" alt="Network"> 
-              </div>
-              
-              </div>
-            </div>
-      <button type="button" class="btn runcode">Run Code</button>
+              <br>  &ltimg src="img/net2.gif" alt="Network"&gt 
+          
+              <br>  &ltimg src="img/net1.gif" alt="Network"&gt
+          
+             <br>&lt/div&gt
+      <br></div>
+      <button type="button" id="runcode" class="btn runcode">Run Code</button>
       </div>
     </main>
     
@@ -58,5 +50,10 @@
        </div>
       </div>
     </footer>
+  <script>
+  $("#runcode").on('click', function(){
+    $("#code").html('<div class='+"code"+'><div class='+"row justify-content-center flex-wrap"+'>'+'<div class='+"col"+'><img src='+"img/earth0.gif"+ 'alt='+"Earth"+'>'+'</div>'+'<div class='+"col"+'><img src='+"img/net0.gif"+'alt='+"Network"+'></div>'+'</div>'+'<div class="row justify-content-center flex-wrap">'+'<div class="col">'+'<img src='+"img/net2.gif"+'alt='+"Network"+'></div>'+'<div class="col">'+'<img src='+"img/net1.gif"+'alt='+"Network"+'></div>'+'</div>'+'</div>');
+    });
+  </script>
 </body>
 </html>
