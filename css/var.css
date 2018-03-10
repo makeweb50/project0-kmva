@@ -1,3 +1,5 @@
+
+
 *{
   text-align: center;
   margin: 0;
@@ -228,11 +230,12 @@ main{
 }
 
 .lang{
-  margin: 5px auto;
+margin: 5px auto;
 }
 
 .imgblock{
   text-align: center;
+  width: 100%;
   max-height: 300px;
   padding: 0;
   overflow: hidden;
@@ -243,9 +246,8 @@ main{
 }
 
 .pblock{
-  width: 60%;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -253,33 +255,6 @@ main{
 .pblock p{
   display: block;
   font-size: 3vw;
-}
-
-.catpage{
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.catheaders{ 
-  padding: 16% 10%;
-  color:  black;
-}
-
-.catheaders h2{
-  display: block;
-  margin-bottom: 5%;
-  height: 20px;
-  color:  black;
-  font-size: 1.5rem;
-  
-  text-align: left;
-}
-
-.cat{
-  width: 100%;
-  height: 100%;
-  background: url(../img/cat3.jpg) no-repeat center top / cover;
 }
 
 footer{
@@ -292,11 +267,16 @@ footer{
   font-size: 15px;
 }
 
+.cat{
+  width: 100%;
+  height: 100%
+  background: url(../img/cat2.jpg) no-repeat center top / cover;
+}
 
-
-@media (max-width: 768px) {
+@media (max-device-width: 768px) {
   
   .grid{
+    width: 50px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
@@ -306,10 +286,6 @@ footer{
     min-height: 0.5em;
     padding: 2px;
     font-size:0.8em;
-  }
-  
-  .contpage{
-    font-size: 20px;
   }
 }
 
