@@ -1,0 +1,228 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+html,
+body, .grid, .grid-item a, .catpage, .cat {
+  width: 100%;
+  height: 100%; }
+
+html,
+body {
+  color: white;
+  /*rgb(255, 192, 203);*/
+  font-weight: bold;
+  font-family: 'Neucha', cursive;
+  font-size: 2em;
+  background-color: white; }
+
+header, footer {
+  box-shadow: 0 0 15px darkred;
+  min-width: 100%;
+  box-sizing: border-box; }
+
+header {
+  padding: 1em 0 2.8em;
+  max-height: 1vh;
+  background-color: white;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
+  z-index: 3;
+  margin-bottom: 50px; }
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none; }
+
+.menu li {
+  display: inline-block; }
+.menu li a {
+  display: block;
+  color: pink;
+  text-decoration: none;
+  min-width: 5em;
+  min-height: 2em;
+  padding: 5px;
+  box-sizing: border-box; }
+.menu li a:hover {
+  color: firebrick;
+  border-top: 1px solid firebrick;
+  border-bottom: 1px solid firebrick; }
+.menu li a:active {
+  color: firebrick;
+  box-shadow: 0 0 15px darkred;
+  border: none; }
+
+.progh {
+  box-shadow: 0 0 15px indigo; }
+  .progh li a {
+    color: #4B0082; }
+  .progh li a:hover {
+    color: mediumpurple;
+    border-top: 1px solid mediumpurple;
+    border-bottom: 1px solid mediumpurple; }
+  .progh li a:active {
+    color: mediumpurple;
+    box-shadow: 0 0 15px indigo;
+    border: none; }
+
+.progf {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  margin-bottom: 0;
+  color: #4B0082; }
+
+.conth, .contf {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+
+.conth li a, .contf {
+  color: black; }
+
+.conth a:hover {
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+.conth .conth li a:active {
+  color: black;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  border: none; }
+
+main {
+  min-height: 100vh;
+  overflow-y: scroll;
+  max-width: 100%; }
+
+.withnav {
+  font-size: 1rem;
+  padding-top: 140px;
+  padding-bottom: 30px; }
+
+.langpage {
+  color: maroon;
+  text-align: left; }
+
+.progpage {
+  color: #4B0082;
+  background: url(../img/sky2.jpg) no-repeat top center/cover;}
+
+.code img {
+  max-width: 80vw;
+  max-height: 350px; }
+
+.runcode {
+  box-shadow: 0 0 20px rgba(75, 0, 130, 0.7);
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  margin-top: 10%; }
+
+.contpage {
+  background: url(../img/contacts0.jpg) no-repeat top center/cover;
+  color: white; }
+  .contpage a {
+    color: white;
+    text-decoration: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 7px;
+  padding: 1%; }
+
+.grid-item {
+  padding: 6rem 3rem;
+  backface-visibility: hidden;
+  transition: opacity 1s, transform 1s;
+  position: relative; }
+  .grid-item h2 {
+    text-align: left;
+    display: block; }
+  .grid-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    padding: 15%;
+    top: 0;
+    left: 0; }
+
+.grid-item:hover {
+  opacity: 0.4; }
+
+.grid-item:nth-child(1) {
+  background: url(../img/city0.jpg) no-repeat center top/cover; }
+
+.grid-item:nth-child(2) {
+  background: url(../img/header.jpg) no-repeat center top/cover; }
+
+.grid-item:nth-child(3) {
+  background: url(../img/sky2.jpg) no-repeat center top/cover; }
+
+.grid-item:nth-child(4) {
+  background: url(../img/tea0.jpg) no-repeat center top/cover; }
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto; }
+
+.imgblock {
+  text-align: center;
+  max-height: 300px;
+  padding: 0;
+  overflow: hidden; }
+  .imgblock img {
+    width: 100%; }
+
+.pblock {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-height: 20px; }
+  .pblock p {
+    display: block;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 3vw;
+    height: 100%; }
+
+.catpage {
+  padding: 0; }
+
+.cat {
+  background: url(../img/cat3.jpg) no-repeat center top/cover; }
+
+.progpage h1 {
+  margin-bottom: 20px; }
+
+footer {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 3% 0 4% 0;
+  color: maroon;
+  font-size: 15px; }
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+
+  .menu li a {
+    min-width: 2em;
+    min-height: 0.5em;
+    padding: 2px;
+    font-size: 0.8em; }
+
+  .contpage {
+    font-size: 14px; }
+
+  .withnav {
+    padding-top: 120px;
+    padding-bottom: 20px; } }
+
+/*# sourceMappingURL=styl.css.map */
